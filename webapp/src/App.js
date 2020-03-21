@@ -35,7 +35,7 @@ function App() {
         <Route exact path='/forgot' render={() => <ForgotPassword />} />
         <Redirect
           to={{
-            pathname: '/login',
+            pathname: '/home',
           }}
         />
       </main>
