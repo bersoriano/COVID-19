@@ -8,6 +8,10 @@ import './home.css'
 function Home() {
   const [currentTab, setCurrentTab] = useState(0);
 
+  const uploadFile = () => {
+    console.log("Uploading file");
+  }
+
   return (
     <div className="ai-home">
       <h1>Welcome to COVID-19 AI diagnosis</h1>
@@ -27,7 +31,7 @@ function Home() {
       >
         {/* <BottomNavigationAction label="Recents" icon={<RestoreIcon />} /> */}
         {/* <BottomNavigationAction label="Camera" icon={<CameraAlt />} /> */}
-        <BottomNavigationAction label="Upload X-Ray" icon={<Add />} />        
+        <BottomNavigationAction label="Upload X-Ray" icon={<Add />} onClick={uploadFile}/>        
         {/* <BottomNavigationAction label="Attach" icon={<AttachFile />} /> */}
       </BottomNavigation>
     </div>

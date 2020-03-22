@@ -25,7 +25,7 @@ h1 {
 }
 
 .hero-text .placeHolderText {
-    flex:1;
+    flex: .5;
 }
 
 .resultText{
